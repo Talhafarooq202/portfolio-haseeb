@@ -12,7 +12,6 @@ export function VideoSection() {
             className="aspect-[9/16] w-full bg-navy object-contain"
             controls
             muted
-            defaultMuted
             playsInline
             preload="metadata"
             aria-label={images.video.alt}
