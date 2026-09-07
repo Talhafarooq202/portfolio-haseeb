@@ -70,13 +70,13 @@ export function PracticePhotos() {
               <article
                 key={photo.src}
                 data-photo
-                className="relative aspect-[16/10] w-[86%] shrink-0 snap-center overflow-hidden rounded-xl sm:w-[48%] lg:w-[32%]"
+                className="relative aspect-[3/4] w-[70%] shrink-0 snap-center overflow-hidden rounded-xl sm:w-[40%] lg:w-[28%]"
               >
                 <Image
                   src={photo.src}
                   alt={photo.alt}
                   fill
-                  className="object-cover transition duration-700 ease-out"
+                  className="object-cover object-top transition duration-700 ease-out"
                   sizes="(max-width: 640px) 86vw, (max-width: 1024px) 48vw, 32vw"
                 />
               </article>

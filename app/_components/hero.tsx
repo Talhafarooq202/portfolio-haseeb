@@ -9,7 +9,6 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { doctor } from "@/lib/data";
-import { images } from "@/lib/images";
 
 const facts = [
   { icon: FaHome, label: doctor.location },
@@ -28,12 +27,13 @@ export function Hero() {
         </p>
         <article className="overflow-hidden rounded-2xl bg-white shadow-[0_12px_40px_rgba(26,27,75,0.08)]">
           <div className="grid lg:grid-cols-[0.38fr_0.62fr]">
-            <div className="relative h-56 bg-cream sm:h-72 md:h-80 lg:h-auto lg:min-h-[520px]">
+            <div className="relative bg-cream lg:min-h-[520px]">
               <Image
-                src={images.portrait.src}
-                alt={images.portrait.alt}
-                fill
-                className="object-cover object-top"
+                src="/images/image14.jpeg"
+                alt="Dr. Abdul Haseeb's Portrait"
+                width={2845}
+                height={3922}
+                className="h-auto w-full lg:absolute lg:inset-0 lg:h-full lg:w-full lg:object-cover lg:object-top"
                 sizes="(max-width: 1024px) 100vw, 38vw"
                 priority
               />
@@ -68,7 +68,9 @@ export function Hero() {
               </ul>
               <div className="mt-6 grid gap-3 sm:mt-8 sm:grid-cols-2">
                 <Link
-                  href="#contact"
+                  href={doctor.whatsappHref}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-navy px-4 py-2.5 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white sm:py-3"
                 >
                   <FaCalendarAlt className="h-4 w-4 shrink-0" />

@@ -33,7 +33,9 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
-            href={doctor.phoneHref}
+            href={doctor.whatsappHref}
+            target="_blank"
+            rel="noreferrer"
             className="cursor-pointer rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-white transition hover:bg-navy-deep"
           >
             Book now

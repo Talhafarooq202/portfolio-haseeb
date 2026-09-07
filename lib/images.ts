@@ -12,26 +12,15 @@ export const images = {
     alt: "Veterinary specialist holding a small dog",
   },
   video: {
-    src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80",
-    alt: "Clinical interview setting with Dr. Abdul Haseeb",
+    src: "/images/WhatsApp Video 2026-09-06 at 15.11.24.mp4",
+    alt: "Video about Dr. Abdul Haseeb at PetLife Veterinary Hospital",
   },
 };
 
-export const practicePhotoSources = [
-  {
-    src: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1400&q=80",
-    alt: "Surgical team preparing for a procedure in theatre",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1400&q=80",
-    alt: "Clinicians collaborating during an operation",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=1400&q=80",
-    alt: "Veterinary specialist reviewing a patient in clinic",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1400&q=80",
-    alt: "Doctor consulting in a modern clinic",
-  },
-];
+export const practicePhotoSources = Array.from({ length: 17 }, (_, index) => {
+  const n = index + 1;
+  return {
+    src: `/images/image${n}.jpeg`,
+    alt: `Dr. Abdul Haseeb at practice, photo ${n}`,
+  };
+});

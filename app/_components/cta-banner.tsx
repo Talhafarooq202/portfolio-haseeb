@@ -23,7 +23,9 @@ export function CtaBanner() {
           </h2>
           <div className="mt-5 flex flex-col gap-3 sm:mt-6 sm:flex-row">
             <Link
-              href={doctor.phoneHref}
+              href={doctor.whatsappHref}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-navy px-5 py-3 text-sm font-semibold text-white transition hover:bg-navy-deep"
             >
               Book An Appointment

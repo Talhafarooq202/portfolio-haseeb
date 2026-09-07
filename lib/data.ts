@@ -15,9 +15,9 @@ export const doctor = {
   location: "Lahore, Pakistan",
   clinic: "PetLife Veterinary Hospital",
   address: "MM Alam Road, Gulberg III, Lahore, Pakistan",
-  phoneDisplay: "+92 42 3576 8900",
-  phoneHref: "tel:+924235768900",
-  whatsappHref: "https://wa.me/924235768900",
+  phoneDisplay: "+92 306 7270101",
+  phoneHref: "tel:+923067270101",
+  whatsappHref: "https://wa.me/923067270101",
   mapHref:
     "https://www.google.com/maps/search/?api=1&query=MM+Alam+Road+Gulberg+III+Lahore+Pakistan",
   mapEmbed:
