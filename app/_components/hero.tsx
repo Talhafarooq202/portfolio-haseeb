@@ -5,8 +5,9 @@ import {
   FaClock,
   FaGlobe,
   FaHome,
+  FaInstagram,
+  FaLinkedin,
   FaPaw,
-  FaPhoneAlt,
 } from "react-icons/fa";
 import { doctor } from "@/lib/data";
 
@@ -21,10 +22,7 @@ export function Hero() {
   return (
     <section id="top" className="scroll-mt-20 bg-surface px-4 py-6 sm:px-6 sm:py-8 md:py-12">
       <div className="mx-auto max-w-6xl">
-        <p className="mb-3 truncate text-xs text-muted sm:mb-4 sm:text-sm">
-          PetLife <span className="mx-1 text-line">/</span> Portfolio{" "}
-          <span className="mx-1 text-line">/</span> {doctor.name}
-        </p>
+
         <article className="overflow-hidden rounded-2xl bg-white shadow-[0_12px_40px_rgba(26,27,75,0.08)]">
           <div className="grid lg:grid-cols-[0.38fr_0.62fr]">
             <div className="relative bg-cream lg:min-h-[520px]">
@@ -66,7 +64,7 @@ export function Hero() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 grid gap-3 sm:mt-8 sm:grid-cols-2">
+              <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
                 <Link
                   href={doctor.whatsappHref}
                   target="_blank"
@@ -77,11 +75,24 @@ export function Hero() {
                   Book An Appointment
                 </Link>
                 <Link
-                  href={doctor.phoneHref}
-                  className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-navy px-4 py-2.5 text-sm font-semibold text-navy transition hover:bg-navy hover:text-white sm:py-3"
+                  href={doctor.instagramHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-navy px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-navy-deep sm:py-3"
                 >
-                  <FaPhoneAlt className="h-4 w-4 shrink-0" />
-                  Call Clinic
+                  <FaInstagram className="h-4 w-4 shrink-0" aria-hidden />
+                  Instagram
+                </Link>
+                <Link
+                  href={doctor.linkedinHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-navy px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-navy-deep sm:py-3"
+                >
+                  <FaLinkedin className="h-4 w-4 shrink-0" aria-hidden />
+                  LinkedIn
                 </Link>
               </div>
             </div>

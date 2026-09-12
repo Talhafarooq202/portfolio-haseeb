@@ -1,10 +1,11 @@
-import { FaCat, FaDog } from "react-icons/fa";
+import { FaCat, FaDog, FaDove } from "react-icons/fa";
 import { SectionHeading } from "@/components/section-heading";
 import { languages, species } from "@/lib/data";
 
 const speciesIcons = {
   dog: FaDog,
   cat: FaCat,
+  bird: FaDove,
 };
 
 export function SpeciesLanguages() {
