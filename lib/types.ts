@@ -36,7 +36,17 @@ export interface VaccinationCamp {
   count: number;
 }
 
+export interface ProjectImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  objectFit?: "contain" | "cover";
+}
+
 export interface ImpactProject {
+  id: string;
+  category: string;
   title: string;
   initiative: string;
   leadOrg: string;
@@ -45,10 +55,13 @@ export interface ImpactProject {
   description: string;
   contribution: string;
   stats: ImpactStat[];
-  schools: string[];
-  localLanguages: string[];
-  internationalLanguages: string[];
-  vaccinations: VaccinationCamp[];
-  totalVaccinated: number;
-  courses: string[];
+  highlights?: string[];
+  schools?: string[];
+  localLanguages?: string[];
+  internationalLanguages?: string[];
+  vaccinations?: VaccinationCamp[];
+  totalVaccinated?: number;
+  courses?: string[];
+  image: ProjectImage;
+  instagramHref: string;
 }

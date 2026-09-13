@@ -1,4 +1,4 @@
-import { practicePhotoSources } from "@/lib/images";
+import { images, practicePhotoSources } from "@/lib/images";
 import type {
   Credential,
   ImpactProject,
@@ -54,11 +54,7 @@ export const qualifications: Qualification[] = [
     description:
       "Doctor of Veterinary Medicine at UVAS Lahore, Pakistan registered veterinary physician and surgeon. Skills are developed through ongoing professional development.",
   },
-  {
-    title: "Expert in minimally invasive and endoscopic surgery",
-    description:
-      "Dogs, cats, and birds are treated for internal medicine, surgery, dentistry, and pain management. The specialty is focused on endosurgery and other minimally invasive procedures.",
-  },
+
 ];
 
 export const services: Service[] = [
@@ -135,6 +131,8 @@ export const languages: LanguageItem[] = [
 export const practicePhotos = practicePhotoSources;
 
 export const rabiesFreePakistan: ImpactProject = {
+  id: "rabies-free-pakistan",
+  category: "Community Project",
   title: "Rabies Free Pakistan Initiative",
   initiative: "Impact Report",
   leadOrg: "SAVERS",
@@ -143,7 +141,7 @@ export const rabiesFreePakistan: ImpactProject = {
   description:
     "During Rabies Awareness Month, SAVERS led the Rabies-Free Pakistan Initiative, delivering awareness activities across Lahore and Muzaffargarh. Four school visits educated students on rabies prevention and animal welfare, while awareness reels in 11 languages helped spread these important messages to communities nationwide.",
   contribution:
-    "Dr. Abdul Haseeb contributed as an aspiring veterinarian, accounting for 149 of the 386 animals vaccinated across partner camps.",
+    "Dr. Abdul Haseeb contributed as an active participant, accounting for 149 of the 386 animals vaccinated across partner camps.",
   stats: [
     { value: "1,750+", label: "Students educated" },
     { value: "450,531", label: "People reached online" },
@@ -180,4 +178,37 @@ export const rabiesFreePakistan: ImpactProject = {
     "AVC · Animal Handling & Vaccination",
     "RHC · Rabies Healthcare Certificate",
   ],
+  image: images.project,
+  instagramHref: "https://www.instagram.com/savers_uvas",
 };
+
+export const recycleRootsOutreach: ImpactProject = {
+  id: "recycle-roots-outreach",
+  category: "Community Project",
+  title: "The Recycle Roots Educational Outreach",
+  initiative: "Community Project",
+  leadOrg: "TheRecycleRoots",
+  leadOrgFull: "The Recycle Roots",
+  period: "School Sustainability Visit",
+  description:
+    "The Recycle Roots team visited a local educational institution to inspire students about sustainability and creative reuse. Interactive sessions and hands-on activities encouraged students to become the next generation of eco-warriors. Students painted recycled plastic bottles into vibrant planters, learned why reducing waste and eco-friendly practices matter, and planted small plants in those planters to symbolize the growth of greener habits.",
+  contribution:
+    "Dr. Abdul Haseeb contributed as an active team member, helping facilitate the workshops and planting activity with the students.",
+  stats: [
+    { value: "Hands-on", label: "workshops" },
+    { value: "Recycled", label: "bottle planters" },
+    { value: "Student", label: "eco-education" },
+  ],
+  highlights: [
+    "Interactive sustainability sessions",
+    "Painting recycled bottles into planters",
+    "Planting seedlings for eco-friendly habits",
+  ],
+  image: images.research,
+  instagramHref: "https://www.instagram.com/therecycleroots",
+};
+
+export const featuredProjects: ImpactProject[] = [
+  rabiesFreePakistan,
+  recycleRootsOutreach,
+];

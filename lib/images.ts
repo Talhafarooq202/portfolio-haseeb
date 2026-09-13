@@ -16,6 +16,14 @@ export const images = {
     alt: "Rabies Free Pakistan Initiative impact report covering school visits, social reach, 11 languages, and 386 animal vaccinations",
     width: 720,
     height: 907,
+    objectFit: "contain" as const,
+  },
+  research: {
+    src: "/images/research_2.jpeg",
+    alt: "Marigold planted in a painted recycled bottle planter from The Recycle Roots school outreach",
+    width: 1200,
+    height: 1600,
+    objectFit: "cover" as const,
   },
   video: {
     src: "/images/WhatsApp Video 2026-09-06 at 15.11.24.mp4",
@@ -23,10 +31,13 @@ export const images = {
   },
 };
 
-export const practicePhotoSources = Array.from({ length: 17 }, (_, index) => {
+export const practicePhotoSources = Array.from({ length: 18 }, (_, index) => {
   const n = index + 1;
   return {
     src: `/images/image${n}.jpeg`,
-    alt: `Dr. Abdul Haseeb at practice, photo ${n}`,
+    alt:
+      n === 18
+        ? "Dr. Abdul Haseeb examining a lion cub at practice"
+        : `Dr. Abdul Haseeb at practice, photo ${n}`,
   };
 }).filter((photo) => !photo.src.endsWith("image13.jpeg") && !photo.src.endsWith("image14.jpeg") && !photo.src.endsWith("image17.jpeg"));
